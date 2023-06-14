@@ -4,7 +4,7 @@
 
 	<test name="login">
 		<parameter name="browser" value="Chrome" />
-		<parameter name="author" value="Arnaz" />
+		<parameter name="author" value="Harry" />
 		<classes>
 			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
 				<methods>
@@ -15,7 +15,7 @@
 	</test> <!-- Test -->
 	<test name="AddEmployee">
 		<parameter name="browser" value="safari" />
-		<parameter name="author" value="Arbaz" />
+		<parameter name="author" value="David" />
 		<classes>
 			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
 				<methods>
@@ -26,7 +26,7 @@
 	</test> <!-- Test -->
 	<test name="UpdateEmployee">
 		<parameter name="browser" value="safari" />
-		<parameter name="author" value="Arnaz" />
+		<parameter name="author" value="Harry" />
 		<classes>
 			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
 				<methods>
@@ -37,7 +37,7 @@
 	</test> <!-- Test -->
 	<test name="DeleteEmployee">
 		<parameter name="browser" value="chrome" />
-		<parameter name="author" value="Kaif" />
+		<parameter name="author" value="Lisa" />
 		<classes>
 			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
 				<methods>
