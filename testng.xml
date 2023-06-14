@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="login">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="author" value="Arnaz" />
+		<classes>
+			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
+				<methods>
+					<include name="login"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="AddEmployee">
+		<parameter name="browser" value="safari" />
+		<parameter name="author" value="Arbaz" />
+		<classes>
+			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
+				<methods>
+					<include name="addEmployee"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="UpdateEmployee">
+		<parameter name="browser" value="safari" />
+		<parameter name="author" value="Arnaz" />
+		<classes>
+			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
+				<methods>
+					<include name="updateEmployee"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="DeleteEmployee">
+		<parameter name="browser" value="chrome" />
+		<parameter name="author" value="Kaif" />
+		<classes>
+			<class name="com.OrangeHRMAutomationTest.OrangeHRMEmpMgmt">
+				<methods>
+					<include name="deleteEmployee"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
