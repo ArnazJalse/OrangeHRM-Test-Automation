@@ -158,9 +158,9 @@ public class OrangeHRMEmpMgmt{
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button")).click();
 		Thread.sleep(2000);
 		extentTest.info("Enter data");
-		driver.findElement(By.name("firstName")).sendKeys("Arnaz");
-		driver.findElement(By.name("middleName")).sendKeys("Shahid");
-		driver.findElement(By.name("lastName")).sendKeys("Jalse");
+		driver.findElement(By.name("firstName")).sendKeys("John");
+		driver.findElement(By.name("middleName")).sendKeys("Smith");
+		driver.findElement(By.name("lastName")).sendKeys("Joe");
 		String empId = driver.findElement(By.xpath(
 				"//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input"))
 				.getText();
@@ -186,7 +186,7 @@ public class OrangeHRMEmpMgmt{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"))).click();
 		extentTest.info("Enter Name & Click on search button");
-		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")).sendKeys("Arnaz Jalse");
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")).sendKeys("John Joe");
 		driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]")).click();
 		extentTest.info("Click on update button");
 		driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[2]/div/div[9]/div/button[2]/i")).click();
@@ -197,7 +197,7 @@ public class OrangeHRMEmpMgmt{
 		updateName.clear();
 		
 		extentTest.info("Enter new Name");
-		updateName.sendKeys("ArnazUp");
+		updateName.sendKeys("JohnUpdate");
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button")).click();
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -205,7 +205,7 @@ public class OrangeHRMEmpMgmt{
 		Thread.sleep(2000);
 		String updatedactual = driver.findElement(By.tagName("h6")).getText();
 		
-		Assert.assertEquals("updatedactual", "ArnazUpJalse");
+		Assert.assertEquals("updatedactual", "JohnUpdateJoe");
 		extentTest.pass("Assertion is passed");
 		
 	}
@@ -216,7 +216,7 @@ public class OrangeHRMEmpMgmt{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"))).click();
 		extentTest.info("Enter Name & Click on search button");
-		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")).sendKeys("ArnazUp");
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")).sendKeys("JohnUpdate");
 		driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]")).click();
 		Thread.sleep(2000);
 		extentTest.info("Click on delete button");
