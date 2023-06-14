@@ -30,6 +30,9 @@ Before running the tests, ensure that you have the following software installed:
 - The reports include detailed information about the test execution, including logs, browser information, system information, and author information.
 - After running the tests, you can open the generated HTML reports to view the results.
 
+<img width="1488" alt="image" src="https://github.com/ArnazJalse/OrangeHRM-Test-Automation/assets/77377394/cfca5be3-b8a8-415a-baaa-69bc8089e721">
+
+
 ## testng.xml
 
 The `testng.xml` file is used to configure the test suite and specify the browsers for parallel execution. It includes three test configurations for Chrome, Firefox, and Safari browsers. You can update the browser names and add/remove configurations as needed.
